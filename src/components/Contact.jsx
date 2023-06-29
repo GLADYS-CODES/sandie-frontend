@@ -47,12 +47,12 @@ const Contact = () => {
         </p>
 
         <div className="flex  items-center mb-8">
-          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-500 text-orange-200">
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-600 text-orange-200">
             <FiMapPin size={20} className="text-xl" />
           </div>
           <div className="ml-4">
             <h2 className="text-xl font-semibold">Location</h2>
-            <p className="text-gray-500">123 Event Street, New York, NY 535022</p>
+            <p className="text-gray-500">123 Event Street, Nairobi 535022</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
 
         <div className="flex  items-center mb-8">
-          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-500 text-orange-400">
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-600 text-orange-200">
             <FiPhone size={20} className="text-xl" />
           </div>
           <div className="ml-4">
