@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi'; // Example icons from react-icons
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,14 +15,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              {/* Example icon */}
-              <FiMenu className="h-8 w-8 text-gray-800" />
-              <span className="text-lg font-semibold text-gray-800">Sandie</span>
+            <Link to="/" className="flex items-center text-lg font-semibold text-gray-800">
+              Sandie
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               <Link to="/" className="nav-link">
                 Home
               </Link>
@@ -45,14 +44,13 @@ const Navbar = () => {
           <div className="block md:hidden">
             <button
               onClick={toggleMenu}
-              className="hamburger-btn flex items-center px-3 py-2 border rounded text-orange-800 border-orange-900 hover:text-white hover:bg-orange-900 focus:outline-none"
+              className="hamburger-btn flex items-center px-3 py-2 border rounded text-orange-800 border-orange-900 hover:text-white hover:bg-orange-900 focus:outline-none transition duration-300"
             >
-              <span className="sr-only">Toggle mobile menu</span>
-              {/* Example icons */}
+              <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <FiX className="h-6 w-6" />
+                <FiX className="w-5 h-5" />
               ) : (
-                <FiMenu className="h-6 w-6" />
+                <FiMenu className="w-5 h-5" />
               )}
             </button>
           </div>
@@ -60,8 +58,8 @@ const Navbar = () => {
       </div>
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden bg-orange-200 transition duration-300">
+          <div className="flex flex-col items-center py-2 space-y-2">
             <Link
               to="/"
               className="nav-link-mobile"

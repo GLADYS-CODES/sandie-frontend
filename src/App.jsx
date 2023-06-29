@@ -1,17 +1,26 @@
 //import { useState } from 'react'
 
-import './App.css'
+
 
 
 import React from 'react'
+import Home from './components/Home'
 import Navbar from './components/Navbar';
-import { Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Route>
-      
-    </Route>
+    
+  // routing
+  <Router>
+
+<Navbar/>
+<Routes>
+<Route path="/" element={<Home/>}/>
+
+</Routes>
+    </Router>
+    
     
   )
 };
