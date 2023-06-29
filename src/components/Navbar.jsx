@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link to="/login" className="nav-link">
                 Login
               </Link>
-              <Link to="/contact-us" className="nav-link">
+              <Link to="/contact" className="nav-link">
                 Contact Us
               </Link>
             </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
               Login
             </Link>
             <Link
-              to="/contact-us"
+              to="/contact"
               className="nav-link-mobile"
               onClick={toggleMenu}
             >
