@@ -39,10 +39,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-white text-black">
+    <section className="bg-orange-800 text-black">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center hover:text-orange-800">Contact Us</h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center ">Contact Us</h2>
+        <p className="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
           Have any questions or want to get in touch? Reach out to us using the contact details below or simply fill out the form.
         </p>
 
