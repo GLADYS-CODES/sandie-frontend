@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center text-lg font-semibold text-gray-800">
+            <Link to="/" className="flex items-center text-2xl font-semibold text-gray-800">
               Sandie
             </Link>
           </div>
@@ -82,11 +82,11 @@ const Navbar = () => {
               Events
             </Link>
             <Link
-              to="/student-registration"
+              to="/signup"
               className="nav-link-mobile"
               onClick={toggleMenu}
             >
-              Student Registration
+              SignUp
             </Link>
             <Link
               to="/login"

@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import SignUp from './components/SignUp';
 import Contact from './components/Contact';
 import Login from './components/Login';
+import Events from './components/Events';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
 <Navbar/>
 <Routes>
 <Route path="/" element={<Home/>}/>
+<Route path="/events" element={<Events/>}/>
 <Route path="/signup" element={<SignUp/>}/>
 <Route path="/contact" element={<Contact/>}/>
 <Route path='/login' element={<Login/>}/>
+
 
 </Routes>
     </Router>

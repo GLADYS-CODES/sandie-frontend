@@ -16,10 +16,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-orange-200 py-8">
+    <footer className="bg-orange-300 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-center items-center mb-8">
-          <span className="text-lg font-semibold text-gray-800 mb-4 md:mb-0">Sandie</span>
+          <span className="text-lg font-semibold text-gray-800 mb-4 md:mb-0">Sandie:  </span>
+
           <div className="flex items-center space-x-4">
             <div className="social-icon hover:text-black transition duration-300">
               <FiFacebook className="text-gray-800" />
@@ -34,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center md:flex-row justify-center">
           <div className="mb-4 md:mb-0">
-            <span className="text-gray-800">Subscribe to our newsletter:</span>
+            <span className="text-gray-800">Subscribe to our newsletter:  </span>
           </div>
           <form onSubmit={handleSubmit} className="flex items-center">
             <input

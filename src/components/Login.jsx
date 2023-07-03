@@ -20,7 +20,7 @@ const Login = () => {
       .then((response) => response.json())
       .then((data) => {
         // Handle the response from the backend
-        // You can redirect to the Add Event page if the login is successful
+        // You can redirect to the Add Event xpage if the login is successful
         // Replace `YOUR_ADD_EVENT_URL` with the actual URL of the Add Event page
         if (data.success) {
           window.location.href = 'YOUR_ADD_EVENT_URL';
