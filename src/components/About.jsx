@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import backgroundImage1 from '../assets/bg-about-1.jpg';
+import backgroundImage1 from '../assets/bg-about-2.jpg';
 
 const About = () => {
   return (
