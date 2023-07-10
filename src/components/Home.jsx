@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function Home() {
-  const [backgroundImage, setBackgroundImage] = useState('');
+  const [backgroundImage, setBackgroundImage] = useState('');    //set variable to hold the background image
 
-  useEffect(() => {
+  useEffect(() => {   // Fetch a random image from Unsplash API
     const fetchRandomImage = async () => {
       try {
-        const response = await axios.get('https://api.unsplash.com/photos/random', {
+        const response = await axios.get('https://api.unsplash.com/photos/random', {    
           params: {
             client_id: '_5Ql_GANS0Zk8MgfZeMkOL2mebq_gFvpA1NRPQDHcxE',
           },
         });
-
+//  set the background image to the random image we fetched
         setBackgroundImage(response.data.urls.regular);
-      } catch (error) {
+      } catch (error) {                                       // catch any errors
         console.error('Error fetching random image:', error);
       }
     };
-
+//  call the fetchRandomImage function when the component mounts so we can see the image right away
     fetchRandomImage();
   }, []);
 
